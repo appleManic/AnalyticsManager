@@ -70,7 +70,7 @@
 		3DCB06D62BE00B1000E38A0D /* AnalyticsService */ = {
 			isa = PBXGroup;
 			children = (
-				3DCB06EB2BE00B4600E38A0D /* MoEngage */,
+				3DCB06EB2BE00B4600E38A0D /* Analytics */,
 				3DCB06D72BE00B1000E38A0D /* AppDelegate.swift */,
 				3DCB06D92BE00B1000E38A0D /* SceneDelegate.swift */,
 				3DCB06DB2BE00B1000E38A0D /* ViewController.swift */,
@@ -82,7 +82,7 @@
 			path = AnalyticsService;
 			sourceTree = "<group>";
 		};
-		3DCB06EB2BE00B4600E38A0D /* MoEngage */ = {
+		3DCB06EB2BE00B4600E38A0D /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
 				3DCB06ED2BE00B4600E38A0D /* Events */,
@@ -90,7 +90,7 @@
 				3DCB06F12BE00B4600E38A0D /* AnalyticsManager.swift */,
 				3DCB06F22BE00B4600E38A0D /* Services */,
 			);
-			path = MoEngage;
+			path = Analytics;
 			sourceTree = "<group>";
 		};
 		3DCB06ED2BE00B4600E38A0D /* Events */ = {
