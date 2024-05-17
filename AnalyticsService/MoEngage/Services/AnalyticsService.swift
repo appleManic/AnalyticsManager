@@ -1,12 +1,14 @@
 //
-//  MoEngageService.swift
-//  BeatO
+//  AnalyticsService.swift
 //
-//  Created by Pawan Selokar on 13/03/24.
-//  Copyright © 2024 Sandip Khedkar. All rights reserved.
+//  AnalyticsService
+//
+//  Created by Pawan Selokar on 14/03/24..
 //
 
+
 import Foundation
+import UIKit
 
 protocol AnalyticsService {
     
@@ -14,7 +16,7 @@ protocol AnalyticsService {
     
     func track( event: AnalyticsEvent, params: [String : Any]?)
 
-    func setUser(attributes: [String: String]?)
+    func setUser()
     
     func unsetUser()
 }

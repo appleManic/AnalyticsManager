@@ -1,12 +1,13 @@
 //
 //  AnalyticsManager.swift
-//  BeatO
+//  AnalyticsService
 //
-//  Created by Pawan Selokar on 13/03/24.
-//  Copyright © 2024 Sandip Khedkar. All rights reserved.
+//  Created by Pawan Selokar on 14/03/24..
 //
 
+
 import Foundation
+import UIKit
 
 class AnalyticsManager {
     
@@ -36,15 +37,15 @@ class AnalyticsManager {
         }
     }
     
-    func setUser(services:[AnalyticsServiceType] = AnalyticsServiceType.allEvents, attributes: [String : String]?) {
+    func setUser(services:[AnalyticsServiceType] = AnalyticsServiceType.allEvents) {
         for service in services {
-            service.service.setUser(attributes: attributes)
+            service.service.setUser()
         }
     }
     
-    func unsetUser() {
+    func unsetUser(services:[AnalyticsServiceType] = AnalyticsServiceType.allEvents) {
         for service in services {
-            service.unsetUser()
+            service.service.unsetUser()
         }
     }
 }
